@@ -5,6 +5,11 @@
 @import 'material-symbols';
 @import './icons/line-awesome.scss';
 
+@font-face {
+  font-family: "Playlist Script";
+  src: url("./playlist-script.ttf");
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

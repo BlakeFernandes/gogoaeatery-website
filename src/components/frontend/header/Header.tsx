@@ -2,8 +2,6 @@ import Image from "next/image";
 
 import Hero from "@/images/hero-1.jpg";
 import LogoIcon from "@/images/logo-icon.png";
-import LogoText from "@/images/logo-text.png";
-import { url } from "inspector";
 import Link from "next/link";
 
 const Header = () => {
@@ -48,10 +46,7 @@ const Header = () => {
                             src={LogoIcon}
                             alt="Logo Icon"
                         />
-                        <Image
-                            src={LogoText}
-                            alt="Logo Icon"
-                        />
+                        <h1 className="text-[85px] border-none text-white  font-playlist">Go Goa Eatery</h1>
                         {/* <p className="text-white text-lg">Closed ⋅ Opens 6:45 am Tue</p> */}
                     </div>
                 </header>

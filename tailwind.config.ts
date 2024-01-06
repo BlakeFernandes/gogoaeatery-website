@@ -56,6 +56,7 @@ const config: Config = {
       },
       fontFamily: {
         oswald: ["Oswald"],
+        playlist: ["Playlist Script"],
       },
       keyframes: {
         "accordion-down": {
