@@ -15,7 +15,7 @@ const Index = () => {
         <>
             <Head>
                 <title>Go Goa Eatery - Best in Devonport | Cafe</title>
-                <meta name='description' content='Nestled in the heart of Devonport, Go Goa Eatery is more than just a café. Dive into our diverse menu, featuring a fusion of traditional Goan curries, European-inspired salads, and homemade pastries.' />
+                <meta name='description' content='Nestled in the heart of Devonport, Go Goa Eatery is a cherished destinations for locals and visitors. Offering a unique fusion of Goan and European cuisine.' />
             </Head>
 
             <Header heroImg={Hero} />

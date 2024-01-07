@@ -16,7 +16,7 @@ const Catering = () => {
         <>
             <Head>
                 <title>Go Goa Eatery - Menu</title>
-                <meta name='description' content="Brining India's tastes to Auckland's festives. Auckland's best authentic Indian catering service." />
+                <meta name='description' content="Nestled in the heart of Devonport, Go Goa Eatery is a cherished destinations for locals and visitors. Offering a unique fusion of Goan and European cuisine." />
             </Head>
 
             <Header heroImg={Hero} />
