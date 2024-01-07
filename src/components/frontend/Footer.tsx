@@ -32,13 +32,15 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-full justify-between flex p-4 text-center items-center bg-[#000] text-white">
-                <div className="font-normal text-md">© Go Goa Eatery</div>
-                <div className="space-x-2">
-                    <a href="https://www.facebook.com/gogoaeatery/" target="blank"><i className="la la-lg la-facebook-official" /></a>
-                    <a href="https://www.facebook.com/gogoaeatery/" target="blank"><i className="la la-lg la-instagram" /></a>
+            <div className="bg-[#000] w-full justify-center flex">
+                <div className="w-4/5 justify-between flex p-4 text-center items-center text-white">
+                    <div className="font-normal text-md">© Go Goa Eatery</div>
+                    <div className="space-x-2">
+                        <a href="https://www.facebook.com/gogoaeatery/" title="Facebook" target="blank"><i className="la la-lg la-facebook-official" /></a>
+                        <a href="https://www.facebook.com/gogoaeatery/" title="Instagram" target="blank"><i className="la la-lg la-instagram" /></a>
+                    </div>
+                    <div className="font-normal text-md">All Rights Reserved</div>
                 </div>
-                <div className="font-normal text-md">All Rights Reserved</div>
             </div>
         </footer>
     )
