@@ -26,7 +26,7 @@ export const ImageTextSection = (props: { title: string, description: string[], 
             </h2>
             <div className="space-y-8">
                 {props.description.map((p, i) => <p key={i}>{p}</p>)}
-                <div className={cn("grid mx-auto max-w-4xl", `grid-cols-${props.images.length} grid-rows-1` )}>
+                <div style={{ gridTemplateColumns: `repeat(${props.images.length}, minmax(0, 1fr))` }} className={cn("grid mx-auto max-w-4xl", `grid-rows-1` )}>
                     {props.images.map((image, i) => (
                         <div className="flex justify-center items-center" key={i}>
                             <Image src={image.src} alt={props.title + " Image " + i} width={300} height={300} className="w-full max-w-[300px]" />
