@@ -14,7 +14,7 @@ const CafeMap = () => {
     };
 
     return (
-        <LoadScript  googleMapsApiKey={env.GOOGLE_MAPS_API}>
+        <LoadScript googleMapsApiKey={env.NEXT_PUBLIC_GOOGLE_MAPS_API}>
             <GoogleMap
                 id='location'
                 mapContainerStyle={mapStyles}
