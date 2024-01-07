@@ -9,6 +9,8 @@ import DrinksMenuImg from "@/images/menu-drinks.png";
 import CateringMenuImg from "@/images/menu-catering.png";
 import MenuCard from "~/components/frontend/MenuCard";
 
+import Hero from "@/images/hero-2.jpg";
+
 const Catering = () => {
     return (
         <>
@@ -17,7 +19,7 @@ const Catering = () => {
                 <meta name='description' content="Brining India's tastes to Auckland's festives. Auckland's best authentic Indian catering service." />
             </Head>
 
-            <Header />
+            <Header heroImg={Hero} />
 
             <div className="text-center">
                 <div className="w-16 mx-auto border-t-2 border-[#C7A17A] pb-2"></div>
@@ -26,7 +28,7 @@ const Catering = () => {
                 </h2>
             </div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 mx-auto max-w-4xl justify-center items-center sm:gap-x-2 pb-12">
+            <div className="grid md:grid-cols-3 mx-auto max-w-4xl justify-center items-center sm:gap-x-2 pb-12">
                 <MenuCard image={FoodMenuImg} text="FOOD MENU" href="/menu/food-menu.pdf" />
                 <MenuCard image={DrinksMenuImg} text="DRINKS MENU" href="/menu/drinks-menu.pdf" />
                 <MenuCard image={CateringMenuImg} text="CATERING MENU" href="/menu/catering-menu.pdf" />

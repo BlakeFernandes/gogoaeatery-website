@@ -1,10 +1,9 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
-import Hero from "@/images/hero-1.jpg";
 import LogoIcon from "@/images/logo-icon.png";
 import Link from "next/link";
 
-const Header = () => {
+const Header = (props: { heroImg: StaticImageData }) => {
 
     return (
         <>
@@ -12,7 +11,8 @@ const Header = () => {
                 <nav className="absolute flex p-6 top-0 left-0 right-0 z-20 justify-end">
 
                     <div className="hidden lg:flex lg:gap-x-12">
-                        <Link href="/menu/menu.pdf" target="_blank" className="text-sm font-extrabold tracking-wide leading-6 text-white">MENU</Link>
+                        <Link href="/" className="text-sm font-extrabold tracking-wide leading-6 text-white">HOME</Link>
+                        <Link href="/menu" className="text-sm font-extrabold tracking-wide leading-6 text-white">MENU</Link>
                         <Link href="/menu/catering-menu.pdf" target="_blank" className="text-sm font-extrabold tracking-wide leading-6 text-white">CATERING</Link>
                         <a href="#location" className="text-sm font-extrabold tracking-wide leading-6 text-white">
                             LOCATION
@@ -27,21 +27,19 @@ const Header = () => {
                 <header
                     className="relative overflow-hidden bg-cover bg-no-repeat"
                     style={{
-                        // backgroundPosition: '50%',
-                        // backgroundImage: `url(${Hero.src})`,
                         height: '840px'
                     }}
                 >
                     <div style={{ position: 'absolute', width: '100%', height: '840px', zIndex: '-10' }}>
                         <Image
-                            src={Hero}
+                            src={props.heroImg}
                             alt="Description of the image"
                             layout="fill"
                             objectFit="cover" // Similar to background-size: cover
                             objectPosition="50% 50%" // Similar to background-position: 50% 50%
                         />
                     </div>
-                    <div className="w-full h-full flex flex-col justify-center items-center space-y-4">
+                    <div className="w-full h-full flex flex-col justify-center items-center text-center space-y-4">
                         <Image
                             src={LogoIcon}
                             alt="Logo Icon"

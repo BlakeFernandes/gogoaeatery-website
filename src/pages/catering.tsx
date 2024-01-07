@@ -1,11 +1,13 @@
-import AboutUs from "~/components/frontend/AboutUs";
+import AboutUs from "~/components/frontend/sections/AboutUs";
 import Footer from "~/components/frontend/Footer";
 import Reservations from "~/components/frontend/Reservations";
 import Header from "~/components/frontend/header/Header";
 import CafeMap from "~/components/frontend/GoogleMap";
-import Speciality from "~/components/frontend/Speciality";
-import Cakes from "~/components/frontend/Cakes";
+import Speciality from "~/components/frontend/sections/Speciality";
+import Cakes from "~/components/frontend/sections/Cakes";
 import Head from "next/head";
+
+import Hero from "@/images/hero-2.jpg";
 
 const Catering = () => {
     return (
@@ -15,7 +17,7 @@ const Catering = () => {
                 <meta name='description' content="Brining India's tastes to Auckland's festives. Auckland's best authentic Indian catering service." />
             </Head>
 
-            <Header />
+            <Header  heroImg={Hero}/>
             {/* <Reservations /> */}
             <AboutUs />
             <Speciality />

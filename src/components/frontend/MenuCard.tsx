@@ -7,7 +7,7 @@ const MenuCard = (props: { image: StaticImageData, text: string, href: string })
             <div className="mx-auto px-4 sm:px-6">
                 <div className="py-8 md:py-12">
                     <div className="max-w-6xl mx-auto text-center" data-aos-id-tabs="">
-                        <a href={props.href}>
+                        <a href={props.href} target="_blank" >
                             <div className="relative h-96 w-72 overflow-hidden p-4 border-2 border-gray-300">
                                 <Image
                                     src={props.image}
