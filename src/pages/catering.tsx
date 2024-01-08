@@ -7,7 +7,11 @@ import Speciality from "~/components/frontend/sections/Speciality";
 import Cakes from "~/components/frontend/sections/Cakes";
 import Head from "next/head";
 
-import Hero from "@/images/hero-2.jpg";
+import Hero from "@/images/hero-4.jpg";
+import CateringAbout from "~/components/frontend/sections/catering/CateringAbout";
+
+import FoodMenuImg from "@/images/menu-food.png";
+import MenuCard from "~/components/frontend/MenuCard";
 
 const Catering = () => {
     return (
@@ -18,10 +22,14 @@ const Catering = () => {
             </Head>
 
             <Header  heroImg={Hero}/>
-            {/* <Reservations /> */}
-            <AboutUs />
-            <Speciality />
-            <Cakes />
+            
+            <CateringAbout />
+
+
+            <div className="w-full flex justify-center items-center pb-12">
+                <MenuCard image={FoodMenuImg} text="VIEW CATERING MENU" href="/menu/food-menu.pdf" />
+            </div>
+
             <CafeMap />
             <Footer />
         </>

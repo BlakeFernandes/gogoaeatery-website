@@ -13,10 +13,8 @@ const Header = (props: { heroImg: StaticImageData }) => {
                     <div className="hidden lg:flex lg:gap-x-12">
                         <Link href="/" className="text-sm font-extrabold tracking-wide leading-6 text-white">HOME</Link>
                         <Link href="/menu" className="text-sm font-extrabold tracking-wide leading-6 text-white">MENU</Link>
-                        <Link href="/menu/catering-menu.pdf" target="_blank" className="text-sm font-extrabold tracking-wide leading-6 text-white">CATERING</Link>
-                        <a href="#location" className="text-sm font-extrabold tracking-wide leading-6 text-white">
-                            LOCATION
-                        </a>
+                        <Link href="/catering" className="text-sm font-extrabold tracking-wide leading-6 text-white">CATERING</Link>
+                        <Link href="https://store.gogoaeatery.co.nz" className="text-sm font-extrabold tracking-wide leading-6 text-white">ONLINE STORE</Link>
                         <a href="#contact" className="text-sm font-extrabold tracking-wide leading-6 text-white">
                             CONTACT US
                         </a>

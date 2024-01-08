@@ -17,16 +17,19 @@ const Section = ({ children }: { children: ReactNode }) => {
     );
 }
 
-export const ImageTextSection = (props: { title: string, description: string[], images: StaticImageData[], footer: ReactNode }) => {
+export const ImageTextSection = (props: { title: string, subtitle?: string, description: string[], images: StaticImageData[], footer: ReactNode }) => {
     return (
         <Section>
             <div className="w-16 mx-auto border-t-2 border-[#C7A17A] pb-2"></div>
-            <h2 className="h3 aos-init aos-animate mb-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-tabs]">
-                {props.title}
-            </h2>
+            <div className="mb-4">
+                <h2 className="h3 aos-init aos-animate" data-aos="fade-up" data-aos-anchor="[data-aos-id-tabs]">
+                    {props.title}
+                </h2>
+                <p className="font-medium text-lg text-[#C7A17A]">{props.subtitle}</p>
+            </div>
             <div className="space-y-8">
                 {props.description.map((p, i) => <p key={i}>{p}</p>)}
-                <div style={{ gridTemplateColumns: `repeat(${props.images.length}, minmax(0, 1fr))` }} className={cn("grid mx-auto max-w-4xl", `grid-rows-1` )}>
+                <div style={{ gridTemplateColumns: `repeat(${props.images.length}, minmax(0, 1fr))` }} className={cn("grid mx-auto max-w-4xl", `grid-rows-1`)}>
                     {props.images.map((image, i) => (
                         <div className="flex justify-center items-center" key={i}>
                             <Image src={image.src} alt={props.title + " Image " + i} width={300} height={300} className="w-full max-w-[300px]" />
