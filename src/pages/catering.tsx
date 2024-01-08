@@ -1,13 +1,13 @@
-import AboutUs from "~/components/frontend/sections/AboutUs";
 import Footer from "~/components/frontend/Footer";
-import Reservations from "~/components/frontend/Reservations";
 import Header from "~/components/frontend/header/Header";
 import CafeMap from "~/components/frontend/GoogleMap";
-import Speciality from "~/components/frontend/sections/Speciality";
-import Cakes from "~/components/frontend/sections/Cakes";
 import Head from "next/head";
 
-import Hero from "@/images/hero-2.jpg";
+import Hero from "@/images/hero-4.jpg";
+import CateringAbout from "~/components/frontend/sections/catering/CateringAbout";
+
+import CateringMenuImg from "@/images/menu-catering.png";
+import MenuCard from "~/components/frontend/MenuCard";
 
 const Catering = () => {
     return (
@@ -18,10 +18,14 @@ const Catering = () => {
             </Head>
 
             <Header  heroImg={Hero}/>
-            {/* <Reservations /> */}
-            <AboutUs />
-            <Speciality />
-            <Cakes />
+            
+            <CateringAbout />
+
+
+            <div className="w-full flex justify-center items-center pb-12">
+                <MenuCard image={CateringMenuImg} text="VIEW CATERING MENU" href="/menu/catering-menu.pdf" />
+            </div>
+
             <CafeMap />
             <Footer />
         </>

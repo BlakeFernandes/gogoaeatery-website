@@ -1,3 +1,4 @@
+import Link from "next/link"
 
 const HOURS = [
     ["Monday", "6:45AM - 4:30PM"],
@@ -12,7 +13,7 @@ const HOURS = [
 const Footer = () => {
     return (
         <footer className="flex flex-col items-center bg-[#14110C]">
-            <div className="grid md:grid-cols-4 md:space-y-0 space-y-8 p-12 text-white">
+            <div className="grid gap-5 md:grid-cols-4 md:space-y-0 space-y-8 p-12 text-white">
                 <div className="space-y-4 w-64">
                     <p className="text-lg font-bold pb-4">OPENING HOURS</p>
                     {HOURS.map((hour, index) => (
@@ -28,7 +29,17 @@ const Footer = () => {
                     <div className="space-y-1">
                         <p className="text-[#C7A17A]">gogoacafe@gmail.com</p>
                         <p>+09 445 4173</p>
-                        <p>3/18 Clarence Street, Devonport, Auckland 0624</p>
+                        <p>3/18 Clarence Street, Devonport, Auckland, New Zealand</p>
+                    </div>
+                </div>
+                <div>
+                    <p id='contact' className="text-lg font-bold pb-8">NAVIGATION</p>
+                    <div className="space-y-1">
+                        <Link href="/"><p className="font-semibold hover:text-[#C7A17A]">HOME</p></Link>
+                        <Link href="/menu"><p className="font-semibold hover:text-[#C7A17A]">MENU</p></Link>
+                        <Link href="/catering"><p className="font-semibold hover:text-[#C7A17A]">CATERING</p></Link>
+                        <Link href="https://store.gogoaeatery.co.nz"><p className="font-semibold hover:text-[#C7A17A]">ONLINE STORE</p></Link>
+                        {/* <Link href="#contact"><p className="font-semibold hover:text-[#C7A17A]">CONTACT US</p></Link> */}
                     </div>
                 </div>
             </div>
