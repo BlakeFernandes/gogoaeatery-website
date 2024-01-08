@@ -35,11 +35,11 @@ const Footer = () => {
                 <div>
                     <p id='contact' className="text-lg font-bold pb-8">NAVIGATION</p>
                     <div className="space-y-1">
-                        <Link href=""><p className="font-bold hover:text-[#C7A17A]">HOME</p></Link>
-                        <Link href=""><p>MENU</p></Link>
-                        <Link href=""><p>CATERING</p></Link>
-                        <Link href=""><p>ONLINE STORE</p></Link>
-                        <Link href=""><p>CONTACT US</p></Link>
+                        <Link href="/"><p className="font-semibold hover:text-[#C7A17A]">HOME</p></Link>
+                        <Link href="/menu"><p className="font-semibold hover:text-[#C7A17A]">MENU</p></Link>
+                        <Link href="/catering"><p className="font-semibold hover:text-[#C7A17A]">CATERING</p></Link>
+                        <Link href="https://store.gogoaeatery.co.nz"><p className="font-semibold hover:text-[#C7A17A]">ONLINE STORE</p></Link>
+                        {/* <Link href="#contact"><p className="font-semibold hover:text-[#C7A17A]">CONTACT US</p></Link> */}
                     </div>
                 </div>
             </div>
