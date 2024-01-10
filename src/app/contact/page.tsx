@@ -12,7 +12,7 @@ import MenuCard, { Menu } from "~/components/frontend/MenuCard";
 import Hero from "@/images/hero-5.jpg";
 
 export const metadata = {
-    title: "Go Goa Eatery - Menu",
+    title: "Go Goa Eatery | Contact Us",
     description: "Nestled in the heart of Devonport, Go Goa Eatery is a cherished destinations for locals and visitors. Offering a unique fusion of Goan and European cuisine.",
     icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
@@ -21,8 +21,6 @@ const Catering = () => {
     return (
         <>
             <Header heroImg={Hero} />
-
-            <Menu />
 
             <CafeMap />
             <Footer />

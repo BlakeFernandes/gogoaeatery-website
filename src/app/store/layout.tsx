@@ -18,7 +18,7 @@ const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL
 export const metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: SITE_NAME!,
+    default: `${SITE_NAME!} | Online Store`!,
     template: `%s | ${SITE_NAME}`
   },
   robots: {
@@ -30,7 +30,7 @@ export const metadata = {
 export default async function RootLayout({ children }: { children: ReactNode }) {
   return (
     <>
-      <Header title='Online Store' heroImg={Hero} />
+      <Header title='Go Goa Eatery' heroImg={Hero} />
       <Suspense>
         <main>{children}</main>
       </Suspense>

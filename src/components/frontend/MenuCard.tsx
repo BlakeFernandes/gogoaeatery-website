@@ -1,6 +1,11 @@
 import Image, { StaticImageData } from "next/image"
 import React from "react"
 
+import FoodMenuImg from "@/images/menu-food.png";
+import DrinksMenuImg from "@/images/menu-drinks.png";
+import CateringMenuImg from "@/images/menu-catering.png";
+import { TextSection } from "./ui/section";
+
 const MenuCard = (props: { image: StaticImageData, text: string, href: string }) => {
     return (
         <section>
@@ -28,6 +33,29 @@ const MenuCard = (props: { image: StaticImageData, text: string, href: string })
                 </div>
             </div>
         </section>
+    )
+}
+
+export const Menu = () => {
+    return (
+        <>
+            <TextSection
+                title="View Our Menu"
+                description={[
+                    "We take immense pride in presenting our dishes, each a recipe honed over generations of family tradition and expertise. These recipes, passed down through our family, have been perfected over time, capturing the true spirit and flavors of Goa."
+                ]}
+                footer={
+                    <>
+
+                        <div className="grid md:grid-cols-3 mx-auto max-w-4xl justify-center items-center sm:gap-x-2 pb-12">
+                            <MenuCard image={FoodMenuImg} text="FOOD MENU" href="/menu/food-menu.pdf" />
+                            <MenuCard image={DrinksMenuImg} text="DRINKS MENU" href="/menu/drinks-menu.pdf" />
+                            <MenuCard image={CateringMenuImg} text="CATERING MENU" href="/menu/catering-menu.pdf" />
+                        </div>
+                    </>
+                }
+            />
+        </>
     )
 }
 

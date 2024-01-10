@@ -10,7 +10,7 @@ import CateringMenuImg from "@/images/menu-catering.png";
 import MenuCard from "~/components/frontend/MenuCard";
 
 export const metadata = {
-    title: "Go Goa Eatery - Corporate, BBQ, Party Catering Service Auckland",
+    title: "Go Goa Eatery | Corporate, BBQ, Party Catering Service Auckland",
     description: "Brining India's tastes to Auckland's festives. Auckland's best authentic Indian catering service.",
     icons: [{ rel: "icon", url: "/favicon.ico" }],
 };

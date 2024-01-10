@@ -2,7 +2,7 @@ import Image, { StaticImageData } from "next/image";
 import { ReactNode } from "react";
 import { cn } from "~/utils/utils";
 
-const Section = ({ children }: { children: ReactNode }) => {
+export const Section = ({ children }: { children: ReactNode }) => {
     return (
         <section>
             <div className="mx-auto px-4 sm:px-6">
@@ -15,6 +15,24 @@ const Section = ({ children }: { children: ReactNode }) => {
         </section>
 
     );
+}
+
+export const TextSection = (props: { title: string, subtitle?: string, description: string[], footer: ReactNode }) => {
+    return (
+        <Section>
+            <div className="w-16 mx-auto border-t-2 border-[#C7A17A] pb-2"></div>
+            <div className="mb-4">
+                <h2 className="h3 aos-init aos-animate" data-aos="fade-up" data-aos-anchor="[data-aos-id-tabs]">
+                    {props.title}
+                </h2>
+                <p className="font-medium text-lg text-[#C7A17A]">{props.subtitle}</p>
+            </div>
+            <div className="space-y-8">
+                {props.description.map((p, i) => <p key={i}>{p}</p>)}
+                {props.footer}
+            </div>
+        </Section>
+    )
 }
 
 export const ImageTextSection = (props: { title: string, subtitle?: string, description: string[], images: StaticImageData[], footer: ReactNode }) => {

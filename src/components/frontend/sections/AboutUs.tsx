@@ -35,7 +35,7 @@ const AboutUs = () => {
                                         We warmly invite you to step into our world, where every meal is a celebration, and every guest is part of our family. Whether you&apos;re seeking a quick, savory bite, a leisurely brunch, or an intimate dinner, Go Goa Eatery is your destination. We&apos;re excited to welcome you and share the flavors and stories that make our café a home away from home.
                                     </p>
                                     <div className="space-x-2">
-                                        <p className="pb-2">Follow us on Instagram and Facebook to stay up to date with news and events.</p>
+                                        <p className="font-semibold pb-4">Follow us on Instagram and Facebook to stay up to date with news and events.</p>
                                         <Link href='https://www.instagram.com/gogoaeatery/' target="_blank" className={buttonVariants({ variant: "default" })}>Instagram</Link>
                                         <Link href='https://www.facebook.com/gogoaeatery/' target="_blank" className={buttonVariants({ variant: "default" })}>Facebook</Link>   
                                     </div>
