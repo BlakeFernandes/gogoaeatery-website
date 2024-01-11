@@ -35,7 +35,7 @@ export const TextSection = (props: { title: string, subtitle?: string, descripti
     )
 }
 
-export const ImageTextSection = (props: { title: string, subtitle?: string, description: string[], images: StaticImageData[], footer: ReactNode }) => {
+export const ImageTextSection = (props: { title: string, subtitle?: string, description: string[], images?: StaticImageData[], footer: ReactNode }) => {
     return (
         <Section>
             <div className="w-16 mx-auto border-t-2 border-[#C7A17A] pb-2"></div>
@@ -47,13 +47,15 @@ export const ImageTextSection = (props: { title: string, subtitle?: string, desc
             </div>
             <div className="space-y-8">
                 {props.description.map((p, i) => <p key={i}>{p}</p>)}
-                <div style={{ gridTemplateColumns: `repeat(${props.images.length}, minmax(0, 1fr))` }} className={cn("grid mx-auto max-w-4xl", `grid-rows-1`)}>
+                {props.images ? (
+                    <div style={{ gridTemplateColumns: `repeat(${props.images.length}, minmax(0, 1fr))` }} className={cn("grid mx-auto max-w-4xl", `grid-rows-1`)}>
                     {props.images.map((image, i) => (
                         <div className="flex justify-center items-center" key={i}>
                             <Image src={image.src} alt={props.title + " Image " + i} width={300} height={300} className="w-full max-w-[300px]" />
                         </div>
                     ))}
-                </div>
+                    </div>
+                ) : (<></>)}
                 {props.footer}
             </div>
         </Section>

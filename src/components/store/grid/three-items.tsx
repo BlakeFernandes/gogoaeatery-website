@@ -2,6 +2,7 @@ import { GridTileImage } from '~/components/store/grid/tile';
 import { getCollectionProducts } from '~/lib/shopify';
 import type { Product } from '~/lib/shopify/types';
 import Link from 'next/link';
+import { ImageTextSection } from '~/components/frontend/ui/section';
 
 function ThreeItemGridItem({
   item,
@@ -47,6 +48,13 @@ export async function ThreeItemGrid() {
 
   const [firstProduct, secondProduct, thirdProduct] = homepageItems;
 
+  if (!firstProduct) return (
+    <ImageTextSection
+      title='Coming Soon...'
+      description={[]}
+      footer={<></>}
+    />
+  );
 
   return (
     <section className="mx-auto grid max-w-screen-2xl gap-4 px-4 pb-4 md:grid-cols-6 md:grid-rows-2">

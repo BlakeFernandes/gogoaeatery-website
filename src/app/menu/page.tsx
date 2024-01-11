@@ -9,7 +9,7 @@ import DrinksMenuImg from "@/images/menu-drinks.png";
 import CateringMenuImg from "@/images/menu-catering.png";
 import MenuCard, { Menu } from "~/components/frontend/MenuCard";
 
-import Hero from "@/images/hero-5.jpg";
+import Hero from "@/images/hero-1.jpg";
 
 export const metadata = {
     title: "Go Goa Eatery - Menu",

@@ -16,7 +16,7 @@ const Header = (props: { title?: string, heroImg: StaticImageData }) => {
                         height: '640px'
                     }}
                 >
-                    <div style={{ position: 'absolute', width: '100%', height: '840px', zIndex: '-10' }}>
+                    <div className="blur-sm" style={{ position: 'absolute', width: '100%', height: '840px', zIndex: '-10' }}>
                         <Image
                             src={props.heroImg}
                             alt="Description of the image"

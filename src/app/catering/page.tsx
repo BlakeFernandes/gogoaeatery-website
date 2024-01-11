@@ -23,7 +23,8 @@ const Catering = () => {
             <CateringAbout />
 
             <div className="w-full flex justify-center items-center pb-12">
-                <MenuCard image={CateringMenuImg} text="VIEW CATERING MENU" href="/menu/catering-menu.pdf" />
+                <MenuCard image={Hero} text="VIEW GOAN CATERING MENU" href="/menu/catering-menu.pdf" />
+                <MenuCard image={Hero} text="CONTACT FOR CONTINENTAL CATERING MENU" href="#" />
             </div>
 
             <CafeMap />
