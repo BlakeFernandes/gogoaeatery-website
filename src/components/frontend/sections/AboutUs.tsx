@@ -36,8 +36,8 @@ const AboutUs = () => {
                                     </p>
                                     <div className="space-x-2">
                                         <p className="font-semibold pb-4">Follow us on Instagram and Facebook to stay up to date with news and events.</p>
-                                        <Link href='https://www.instagram.com/gogoaeatery/' target="_blank" className={buttonVariants({ variant: "default" })}>Instagram</Link>
-                                        <Link href='https://www.facebook.com/gogoaeatery/' target="_blank" className={buttonVariants({ variant: "default" })}>Facebook</Link>   
+                                        <Link href='https://www.instagram.com/gogoaeatery/' target="_blank" className={buttonVariants({ variant: "default", size: "sm" })}>INSTAGRAM</Link>
+                                        <Link href='https://www.facebook.com/gogoaeatery/' target="_blank" className={buttonVariants({ variant: "default", size: "sm" })}>FACEBOOK</Link>   
                                     </div>
                                 </div>
                             </div>

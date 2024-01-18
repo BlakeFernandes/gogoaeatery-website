@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import Script from "next/script";
+import { dom } from "@fortawesome/fontawesome-svg-core";
 
 const inter = Inter({
     subsets: ["latin"],
@@ -24,6 +25,9 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en" className="font-sans ${inter.variable} bg-[#F7F7F7]">
+            <head>
+                <style type="text/css">{dom.css()}</style>
+            </head>
             <body>
                 {children}
                 <Analytics />

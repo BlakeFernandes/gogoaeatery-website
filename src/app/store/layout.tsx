@@ -6,7 +6,7 @@ import { ensureStartsWith } from '~/lib/utils';
 import { ReactNode, Suspense } from 'react';
 import Header from '~/components/Header';
 
-import Hero from "@/images/hero-1.jpg";
+import Hero from "@/images/hero-2.jpg";
 import CafeMap from '~/components/frontend/GoogleMap';
 import Footer from '~/components/frontend/Footer';
 
@@ -30,7 +30,7 @@ export const metadata = {
 export default async function RootLayout({ children }: { children: ReactNode }) {
   return (
     <>
-      <Header title='Go Goa Eatery' heroImg={Hero} />
+      <Header title='Go Goa Eatery Store' heroImg={Hero} />
       <Suspense>
         <main>{children}</main>
       </Suspense>

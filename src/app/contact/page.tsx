@@ -1,5 +1,5 @@
 import Footer from "~/components/frontend/Footer";
-import Header from "~/components/Header";
+import Header, { MiniHeader } from "~/components/Header";
 import CafeMap from "~/components/frontend/GoogleMap";
 import Head from "next/head";
 import Image from "next/image";
@@ -21,7 +21,7 @@ export const metadata = {
 const Catering = () => {
     return (
         <>
-            <Header heroImg={Hero} />
+            <MiniHeader heroImg={Hero} />
 
             <TextSection
                 title="Contact Us"
@@ -30,7 +30,7 @@ const Catering = () => {
                 footer={
                     <div>
                         <p>Phone: +09 445 4173</p>
-                        <p>Email: gogoacafe@gmail.com</p>
+                        <p>Email: eat@gogoaeatery.co.nz</p>
                         <p>Address: 3/18 Clarence Street, Devonport, Auckland, New Zealand</p>
                     </div>
                 }

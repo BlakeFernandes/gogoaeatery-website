@@ -22,7 +22,7 @@ export const TextSection = (props: { title: string, subtitle?: string, descripti
         <Section>
             <div className="w-16 mx-auto border-t-2 border-[#C7A17A] pb-2"></div>
             <div className="mb-4">
-                <h2 className="h3 aos-init aos-animate" data-aos="fade-up" data-aos-anchor="[data-aos-id-tabs]">
+                <h2 className="text-4xl font-bold aos-init aos-animate" data-aos="fade-up" data-aos-anchor="[data-aos-id-tabs]">
                     {props.title}
                 </h2>
                 <p className="font-medium text-lg text-[#C7A17A]">{props.subtitle}</p>

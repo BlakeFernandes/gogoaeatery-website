@@ -8,6 +8,8 @@ import CateringAbout from "~/components/frontend/sections/catering/CateringAbout
 
 import CateringMenuImg from "@/images/menu-catering.png";
 import MenuCard from "~/components/frontend/MenuCard";
+import Link from "next/link";
+import { buttonVariants } from "~/components/frontend/ui/button";
 
 export const metadata = {
     title: "Go Goa Eatery | Corporate, BBQ, Party Catering Service Auckland",
@@ -23,8 +25,7 @@ const Catering = () => {
             <CateringAbout />
 
             <div className="w-full flex justify-center items-center pb-12">
-                <MenuCard image={Hero} text="VIEW GOAN CATERING MENU" href="/menu/catering-menu.pdf" />
-                {/* <MenuCard image={Hero} text="CONTACT FOR CONTINENTAL CATERING MENU" href="#" /> */}
+                <Link href='/menu/catering-menu.pdf' target="_blank" className={buttonVariants({ variant: "default", size: "sm" })}>VIEW CATERING MENU</Link>
             </div>
 
             <CafeMap />

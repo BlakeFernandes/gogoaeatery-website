@@ -1,5 +1,5 @@
 import Footer from "~/components/frontend/Footer";
-import Header from "~/components/Header";
+import Header, { MiniHeader } from "~/components/Header";
 import CafeMap from "~/components/frontend/GoogleMap";
 import Head from "next/head";
 import Image from "next/image";
@@ -20,7 +20,7 @@ export const metadata = {
 const Catering = () => {
     return (
         <>
-            <Header heroImg={Hero} />
+            <MiniHeader heroImg={Hero} />
 
             <Menu />
 
