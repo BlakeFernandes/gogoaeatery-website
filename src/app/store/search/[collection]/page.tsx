@@ -6,7 +6,7 @@ import Grid from '~/components/store/grid';
 import ProductGridItems from '~/components/store/layout/product-grid-items';
 import { defaultSort, sorting } from '~/lib/constants';
 
-// export const runtime = 'edge';
+export const runtime = 'edge';
 
 export async function generateMetadata({
   params

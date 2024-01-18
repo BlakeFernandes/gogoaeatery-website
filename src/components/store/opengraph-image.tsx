@@ -25,16 +25,16 @@ export default async function OpengraphImage(props?: Props): Promise<ImageRespon
     {
       width: 1200,
       height: 630,
-      fonts: [
-        {
-          name: 'Inter',
-          data: await fetch(new URL('~/fonts/Inter-Bold.ttf', import.meta.url)).then((res) =>
-            res.arrayBuffer()
-          ),
-          style: 'normal',
-          weight: 700
-        }
-      ]
+      // fonts: [
+      //   {
+      //     name: 'Inter',
+      //     data: await fetch(new URL('~/fonts/Inter-Bold.ttf', import.meta.url)).then((res) =>
+      //       res.arrayBuffer()
+      //     ),
+      //     style: 'normal',
+      //     weight: 700
+      //   }
+      // ]
     }
   );
 }
