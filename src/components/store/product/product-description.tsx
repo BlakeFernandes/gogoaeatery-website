@@ -12,8 +12,8 @@ export function ProductDescription({ product }: { product: Product }) {
         <div className="mr-auto w-auto rounded-full text-[#C7A17A] p-2 text-md font-semibold">
           <Price
             variants={product.variants}
-            amount={product.priceRange.maxVariantPrice.amount}
-            currencyCode={product.priceRange.maxVariantPrice.currencyCode}
+            amount={product.priceRange.minVariantPrice.amount}
+            currencyCode={product.priceRange.minVariantPrice.currencyCode}
           />
         </div>
       </div>

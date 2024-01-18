@@ -14,7 +14,7 @@ import NavCart from "./NavCart";
 export const MiniHeader = (props: { title?: string, heroImg: StaticImageData }) => {
     return (
         <>
-            <div className="bg-[#171717] text-white text-xs px-16 py-3 flex justify-center xl:justify-between">
+            <div className="bg-[#171717] text-white text-xs px-16 py-3 flex justify-between">
                 <div className="flex space-x-8">
                     <Link className="items-center flex hover:text-[#C7A17A]" href="https://maps.app.goo.gl/aDk2A5ntDKVtAzSH9" target="_blank">
                         <span className="material-symbols-filled pr-2">
@@ -54,7 +54,7 @@ export const MiniHeader = (props: { title?: string, heroImg: StaticImageData }) 
 const Header = (props: { title?: string, heroImg: StaticImageData }) => {
     return (
         <>
-            <div className="bg-[#1A191B] text-white text-xs px-16 py-3 flex justify-center xl:justify-between">
+            <div className="bg-[#1A191B] text-white text-xs px-16 py-3 flex justify-between">
                 <div className="flex space-x-8">
                     <Link className="items-center flex hover:text-[#C7A17A]" href="https://maps.app.goo.gl/aDk2A5ntDKVtAzSH9" target="_blank">
                         <span className="material-symbols-filled pr-2">

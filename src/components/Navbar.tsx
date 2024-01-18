@@ -22,7 +22,7 @@ export default function NavBar(props: { primary?: boolean, className?: string })
                 <>
                     <div className="px-16 py-6">
                         <div className="relative flex items-center justify-between">
-                            <div className="absolute inset-y-0 left-0 w-full items-center block xl:hidden">
+                            <div className="inset-y-0 left-0 w-full items-center block xl:hidden">
                                 {/* Mobile menu button*/}
                                 <div className='flex justify-between my-2'>
                                     <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-[#1A191B] focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">

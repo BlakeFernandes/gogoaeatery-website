@@ -55,7 +55,7 @@ export const Menu = () => {
                 }
             />
             <div className="mx-auto max-w-screen-2xl py-8 md:py-12">
-                <div className="w-full flex grid-cols-3 gap-8 justify-between bg-stone-50 p-12 mb-6">
+                <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 justify-between bg-stone-50 p-12 mb-6">
                     {menuItems.map((menuItem) => (
                         <>
                             <div className="w-full">

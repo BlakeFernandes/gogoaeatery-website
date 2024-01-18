@@ -7,7 +7,7 @@ export default function OpenCart({
 }) {
   return (
     <div className="relative flex items-center justify-center transition-colors text-sm text-[#C7A17A]">
-      <p>Cart ({quantity ? quantity : "..."})</p>    
+      <p>Cart ({quantity ? quantity : "0"})</p>    
     </div>
   );
 }
