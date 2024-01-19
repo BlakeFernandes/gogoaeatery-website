@@ -25,7 +25,7 @@ import { Form, FormControl, FormField, FormItem, FormMessage } from "./Form";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { Input } from "./Input";
-import { api } from "~/utils/api";
+// import { api } from "~/utils/api";
 
 const FormSchema = z.object({
     first_name: z.string(),
