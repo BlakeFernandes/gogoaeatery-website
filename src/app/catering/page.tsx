@@ -24,8 +24,9 @@ const Catering = () => {
             
             <CateringAbout />
 
-            <div className="w-full flex justify-center items-center pb-12">
-                <Link href='/menu/catering-menu.pdf' target="_blank" className={buttonVariants({ variant: "default", size: "sm" })}>VIEW CATERING MENU</Link>
+            <div className="w-full flex justify-center items-center pb-12 space-x-2">
+                <Link href='/menu/catering-menu.pdf' target="_blank" className={buttonVariants({ variant: "default", size: "sm" })}>VIEW INDIAN CATERING MENU</Link>
+                <Link href='/menu/continental-catering-menu.pdf' target="_blank" className={buttonVariants({ variant: "default", size: "sm" })}>VIEW CONTINENTAL CATERING MENU</Link>
             </div>
 
             <CafeMap />
