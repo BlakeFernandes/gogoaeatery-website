@@ -88,8 +88,8 @@ const Header = (props: { title?: string, heroImg: StaticImageData }) => {
                 <Image
                     src={props.heroImg}
                     alt="Description of the image"
-                    // objectPosition="50% 50%"
                     className="block w-full h-[100vh] object-cover"
+                    priority
                 />
 
                 <NavBar primary={true} />
@@ -113,10 +113,12 @@ const Header = (props: { title?: string, heroImg: StaticImageData }) => {
             <div className="relative z-10">  
                 <div className="absolute bottom-0 left-0 w-full">
                     <Image
-                        priority
                         src={PaperSvg}
                         className="w-full"
                         alt="Header Transition"
+                        priority
+                        width={1920}
+                        height={1080}
                     />
                 </div>
             </div>
