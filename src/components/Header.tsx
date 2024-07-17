@@ -36,7 +36,7 @@ export const MiniHeader = (props: { title?: string, heroImg: StaticImageData }) 
                     </Link>
                 </div>
                 <div className="space-x-4 flex text-[1rem] items-center">
-                    <NavCart />
+                    {/* <NavCart /> */}
                     <Link href="https://www.facebook.com/gogoaeatery/" className="hidden xl:block"><FontAwesomeIcon icon={faFacebook} /></Link>
                     <Link href="https://www.instagram.com/gogoaeatery/" className="hidden xl:block"><FontAwesomeIcon icon={faInstagram} /></Link>
                 </div>
@@ -76,7 +76,7 @@ const Header = (props: { title?: string, heroImg: StaticImageData }) => {
                     </Link>
                 </div>
                 <div className="space-x-4 flex text-[1rem] items-center">
-                    <NavCart />
+                    {/* <NavCart /> */}
                     <Link href="https://www.facebook.com/gogoaeatery/" className="hidden xl:block"><FontAwesomeIcon icon={faFacebook} /></Link>
                     <Link href="https://www.instagram.com/gogoaeatery/" className="hidden xl:block"><FontAwesomeIcon icon={faInstagram} /></Link>
                 </div>
