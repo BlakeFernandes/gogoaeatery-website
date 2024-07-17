@@ -9,7 +9,7 @@ import DrinksMenuImg from "@/images/menu-drinks.png";
 import CateringMenuImg from "@/images/menu-catering.png";
 import MenuCard, { Menu } from "~/components/frontend/MenuCard";
 
-import Hero from "@/images/devonport-hero.jpeg";
+import Hero from "@/images/devonport-hero.png";
 import { TextSection } from "~/components/frontend/ui/section";
 
 export const metadata = {
